@@ -55,14 +55,27 @@
       --text-muted: #64748b
     }
 
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box
+    }
+
     * {
       font-family: 'Inter', sans-serif
+    }
+
+    html {
+      overflow-x: hidden;
+      max-width: 100vw
     }
 
     body {
       background: var(--bg-light);
       color: var(--text-dark);
-      overflow-x: hidden
+      overflow-x: hidden;
+      max-width: 100vw;
+      position: relative
     }
 
     .navbar {
@@ -393,8 +406,8 @@
     }
 
     .btn-scroll-top {
-      width: 44px;
-      height: 44px;
+      width: 56px;
+      height: 56px;
       border-radius: 50%;
       background: #fff;
       color: var(--text-dark);
@@ -402,7 +415,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 1.2rem;
+      font-size: 1.6rem;
       box-shadow: 0 4px 16px rgba(0, 0, 0, .08);
       transition: all .3s;
       opacity: 0;
@@ -449,6 +462,23 @@
 
       .hero-section {
         padding: 3rem 0
+      }
+
+      .hero-section .col-lg-6.position-relative {
+        min-height: 320px !important
+      }
+
+      .hero-section .col-lg-6.position-relative div[style*="position:absolute"] {
+        max-width: 45%
+      }
+
+      .cta-section {
+        padding: 2rem 1.2rem
+      }
+
+      .float-container {
+        bottom: 18px;
+        right: 18px
       }
     }
   </style>
@@ -542,23 +572,17 @@
           <div class="col-lg-6 position-relative" style="min-height:400px">
             <div
               style="position:absolute;top:10px;left:20px;width:200px;height:260px;background:#e2e8f0;border-radius:12px;border:6px solid #fff;box-shadow:0 8px 24px rgba(0,0,0,.1);transform:rotate(-8deg);overflow:hidden;z-index:2">
-              <img
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPMm9VWRjq0hwPf1Wb_FhCwHuqhJbd7EefmQTLOs8sZczkJ31nSX3PNgR-_TVrKbaXCP1qtV40XIOvYCPxQHoYKnegQhr6Vf6lhEopxZFeOGV3b4zf4KqQYMOK6vWInPjHLblVau_otbn4nBYCK7j3HsElxTiEKPNBr40rNDctp6_jcW7UmmUMXscQDhuLc9xmq1wswl4IpGfgxnlc0UMLx9EO5ExtB2EQDfKXLHQKAWjHF4OlcDCnCSZCjup0anxUQcvo81O4RPEX"
-                alt="Kegiatan trekking di hutan Batu Malang" width="200" height="260"
+              <img src="images/hero-trekking.webp" alt="Kegiatan trekking di hutan Batu Malang" width="200" height="260"
                 style="width:100%;height:100%;object-fit:cover" loading="eager" />
             </div>
             <div
               style="position:absolute;top:40px;right:10px;width:250px;height:310px;background:#e2e8f0;border-radius:12px;border:6px solid #fff;box-shadow:0 12px 32px rgba(0,0,0,.12);transform:rotate(5deg);overflow:hidden;z-index:1">
-              <img
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOpY9nr0-0O3eXg1AH1QxWXLVDydnmNdTcL4i1Sqhmaa8qgpxxviplBIyZZpFSQvUxkIHLmyqgdD2VGfYE8G_dsURDfbMMUwZh5KJYGSdUW64WZbNHN7a5xOCO7JXHaqSRuqlLu30bCxM0lKq5UYFIr6FwtS7Og_eJ1GJYDjb7Zc0oXxw27Lrih3qAHWcIh5bEiJT52prhge3BbsuIVemflL0cWasiLbJK5KaS1MgzENoF89OibPGkitODarY8u13JgJm5JLgl_1Ab"
-                alt="Rafting seru di sungai Batu Malang" width="250" height="310"
+              <img src="images/hero-rafting.webp" alt="Rafting seru di sungai Batu Malang" width="250" height="310"
                 style="width:100%;height:100%;object-fit:cover" loading="eager" />
             </div>
             <div
               style="position:absolute;bottom:10px;left:30%;width:180px;height:180px;background:var(--primary);border-radius:50%;border:4px solid #fff;box-shadow:0 8px 24px rgba(82,212,17,.25);overflow:hidden;z-index:3">
-              <img
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUT2zkrF054Er5cYMca9oEDtxCJYw_9FTi1mOn6XGnS8po3v8VgvYgIuSqMno3nGl_JAwTWeY1O-Hq0tmrVfAGzS38ACT56Fx3AFnmnrI69WPploLZSmYA1FzdtSW7v36MwkEu44evfls-w7uY7sColt0yAaNb2tMICkKOZ8QqXIljMfvHw535t-HCkTJbpCIqtnr13YfL-YqXJqj_yJTcok6Qwr6UnWVuthjdUDMILuuQLov9lBk-SRAFTUp5efXE4up9haG5CZmu"
-                alt="Pemandangan alam Batu Malang" width="180" height="180"
+              <img src="images/hero-alam.webp" alt="Pemandangan alam Batu Malang" width="180" height="180"
                 style="width:100%;height:100%;object-fit:cover" loading="eager" />
             </div>
           </div>
@@ -571,7 +595,7 @@
       <div class="container py-4">
         <div class="text-center mb-5">
           <h2 class="section-title">Tentang Kami</h2>
-          <p class="section-subtitle">Gemilang Katun Outbound — vendor outbound terpercaya di Batu, Malang sejak
+          <p class="section-subtitle">Gemilang Katun Outbound â€” vendor outbound terpercaya di Batu, Malang sejak
             bertahun-tahun melayani ribuan peserta.</p>
         </div>
         <div class="row g-4 mb-5">
@@ -625,9 +649,8 @@
         <div class="row g-4">
           <div class="col-6 col-md-3">
             <div class="service-img-wrap">
-              <img
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNmwmDyHcfAoNym9NjNGZgX93oWQOBzhoD4aZwtfBHdpgoogmsX4DwTxEopLQG7uCK6Uxsv21jQUl7Ajy73jpAxoXBqoCBmOqveeL3cwEabinLUtBl1BN7PoYYtlx_zSyjt5OL7iPcfpMzlDyvQSikMWqnpQ405RfX6d2O7Rv35V-WW_7eAOSBd-GtPy96RhuvkQ0gy0NZX7oX9sTRgddOMZoJ1na_g5y6yFErRVgQwZnIIFNFVF3cfIqT9ZzouaoFJ-id0VuW3pGw"
-                alt="Rafting seru di Batu Malang" width="300" height="300" loading="lazy" />
+              <img src="images/layanan-rafting.webp" alt="Rafting seru di Batu Malang" width="300" height="300"
+                loading="lazy" />
               <div class="overlay">
                 <p>Rafting Seru</p>
               </div>
@@ -635,9 +658,8 @@
           </div>
           <div class="col-6 col-md-3">
             <div class="service-img-wrap">
-              <img
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCasaSwCUIcYXDci1mRQQ7c4z38kzW6cafT-Cg6ClYpbGsU0ITP4xEdu3sn-9zI4r1myfGOUIfXyxfDCHtwAgnpVWU2AJoIhQXGGs4Lnc21SPa2An74H8CpzcKitViXMYvMaLXVscHj12h8WsSBXMhZYap903fvM2MGwYXk91Ibr77qKPWAW3bhxXEmaMEBtSB2vdwyfo-sL4vanmdva1b8nGxEE6ZJlMUsZQjaiCbbzTiWMyVycQ2go1DD2ohnch0rwL2Ev9UeMxKt"
-                alt="Camping di alam Batu Malang" width="300" height="300" loading="lazy" />
+              <img src="images/layanan-camping.webp" alt="Camping di alam Batu Malang" width="300" height="300"
+                loading="lazy" />
               <div class="overlay">
                 <p>Camping Alam</p>
               </div>
@@ -645,9 +667,8 @@
           </div>
           <div class="col-6 col-md-3">
             <div class="service-img-wrap">
-              <img
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAu4OsSbjJS-tNTYehYfdt5b18xumil1p4qU0uUezGJXmxO2f5XDVGYrkvIO43doDCXz_D6TkyqWVjJ0ckd7kHUt4vnaIhz221AfWU5wTLlkwL21wQp_NJ_El3T1hofDbaK5TKKYU6H5cnygVv97ovfRkJcg9IHk_yiDNXCPxIB6rehlb9s_HRoEFQE2Y2ESqMLnAn30bN2VajzPa-aUh4YrGgRTM1VXwf7zJbdClaXj905IZa8QFLyz8q4gUSOAyH1AiGRFWXe93rN"
-                alt="Trekking alam hijau Batu Malang" width="300" height="300" loading="lazy" />
+              <img src="images/layanan-trekking.webp" alt="Trekking alam hijau Batu Malang" width="300" height="300"
+                loading="lazy" />
               <div class="overlay">
                 <p>Trekking Alam</p>
               </div>
@@ -655,9 +676,8 @@
           </div>
           <div class="col-6 col-md-3">
             <div class="service-img-wrap">
-              <img
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9Oq27BLJuO5DuH63KOSt3KPh5lp4V5wVhi8vqoL3eahA2tMldqCqoVz3StEyDgRxZPwhwahqnRH4yATvlwwDTK4Lh2dCAqPEOKU3drJ4aAM8jd_yLB42iNxY7Qok0rEgYnlJZsBOMDCtX-AZqyvgYLvlm-6cctpFcFLIcyantN3_yQFYkzdiMHEuOGZ4XCh3CiVO3Bmv6tEx2Z1uBy8i3KbQ0LcDvfgubyXv6IQttHSRUIMoYiraOxWXQmi-edYhG6iaFtCTMsROe"
-                alt="Gathering kantor di Batu Malang" width="300" height="300" loading="lazy" />
+              <img src="images/layanan-gathering.webp" alt="Gathering kantor di Batu Malang" width="300" height="300"
+                loading="lazy" />
               <div class="overlay">
                 <p>Gathering Kantor</p>
               </div>
@@ -679,9 +699,8 @@
           <div class="col-md-4">
             <div class="article-card h-100">
               <div style="overflow:hidden">
-                <img
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCDRe_vE9zsR8wKC10VOr3vAaDsUc82kCV6K-t7jo6KBE091lmL7ly6EJVf0GTDdWwRmJ0F6fzX8Iwtcclf6VD5UThiH8G0yckSYkIMwsDsR5WzfBlUxIJe_vXhe5Kg4SaWrg0e5IGquxW_2ZgNBueLSMKIkSpDIN7FGsytwKBcFmoAvmmL3y-fgEj9fMLdgrwuqwclOJmHIKZDYWJshofFqz7CdQXqbhPX77UKhMKk7XiVfjNVxvQl5XZrkgVjoMhNc4NE85oUVTg"
-                  alt="Paket family gathering di Batu Malang" width="400" height="220" loading="lazy" />
+                <img src="images/artikel-family-gathering.webp" alt="Paket family gathering di Batu Malang" width="400"
+                  height="220" loading="lazy" />
               </div>
               <div class="card-body">
                 <span class="badge-cat mb-2 d-inline-block">Family Gathering</span>
@@ -696,9 +715,8 @@
           <div class="col-md-4">
             <div class="article-card h-100">
               <div style="overflow:hidden">
-                <img
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1RLw014Wf8Gtem-_ijCrOBBrWb_GI6QdvBctTy5vUzx0B6pbqYyZBunQ9lB-Mg6uWWVTsza_zREQhJ3faR7P1aiAG3yA5rc4ARv1Vma8BCq4Z3vdKX56JUxvA-v7BOwoUB0qpeZPBNoxU7c7-wt0GNAmzHoEqH05JmwUd1_JGyk49xLY8kNvS7jyjl0YKYJ03GqAXuWLM7X2ZYOKYKwgsERI9JHoYdNUlaXSks8JRmza6D4PvXpGW3dbab5fi_zHAeSnlU5fhoKBQ"
-                  alt="Outbound team building di Batu Malang" width="400" height="220" loading="lazy" />
+                <img src="images/artikel-outbound.webp" alt="Outbound team building di Batu Malang" width="400"
+                  height="220" loading="lazy" />
               </div>
               <div class="card-body">
                 <span class="badge-cat mb-2 d-inline-block">Team Building</span>
@@ -713,9 +731,8 @@
           <div class="col-md-4">
             <div class="article-card h-100">
               <div style="overflow:hidden">
-                <img
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuByMDv9WJr0_cwoTAtHfDnxdB3N7uco4rth_Zldl606HrZdBzwULlKLMZcvFQEB2-mZ2HgPbRm8csYgBHPKkKoCqCydKvc3vHVWd1AR3y6u_jPAdOKHQY20jLevN_0rxYOB8GjMQIw3HTSiCWuKO7doTeyiyEsbfJ2gKN0DllSr_T0H-wwxz3SFR91i7dzCX9mURsdbx5vfi2NqRMWnmU4Vkq3ETgt5ISv9yEMaGI3HUDaaobNzymbKgoBbZuThiI-JoCFKL52eeGfa"
-                  alt="Tips petualangan alam di Batu Malang" width="400" height="220" loading="lazy" />
+                <img src="images/artikel-tips-vendor.webp" alt="Tips petualangan alam di Batu Malang" width="400"
+                  height="220" loading="lazy" />
               </div>
               <div class="card-body">
                 <span class="badge-cat mb-2 d-inline-block">Tips</span>

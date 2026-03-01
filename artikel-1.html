@@ -46,14 +46,27 @@
             --text-muted: #64748b
         }
 
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box
+        }
+
         * {
             font-family: 'Inter', sans-serif
+        }
+
+        html {
+            overflow-x: hidden;
+            max-width: 100vw
         }
 
         body {
             background: var(--bg-light);
             color: var(--text-dark);
-            overflow-x: hidden
+            overflow-x: hidden;
+            max-width: 100vw;
+            position: relative
         }
 
         .navbar {
@@ -216,8 +229,8 @@
         }
 
         .btn-scroll-top {
-            width: 44px;
-            height: 44px;
+            width: 56px;
+            height: 56px;
             border-radius: 50%;
             background: #fff;
             color: var(--text-dark);
@@ -225,7 +238,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 1.2rem;
+            font-size: 1.6rem;
             box-shadow: 0 4px 16px rgba(0, 0, 0, .08);
             transition: all .3s;
             opacity: 0;
@@ -423,6 +436,22 @@
             margin-bottom: 1.5rem;
             font-style: italic
         }
+
+        @media(max-width:768px) {
+            .article-content {
+                padding: 0 0.5rem
+            }
+
+            .author-box {
+                flex-direction: column;
+                text-align: center
+            }
+
+            .float-container {
+                bottom: 18px;
+                right: 18px
+            }
+        }
     </style>
     <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"Article","headline":"Paket Family Gathering Seru di Batu Malang untuk Keluarga","description":"Panduan lengkap memilih paket family gathering terbaik di Batu Malang dari vendor outbound terpercaya.","author":{"@type":"Person","name":"Ulil"},"publisher":{"@type":"Organization","name":"Gemilang Katun Outbound","logo":{"@type":"ImageObject","url":"https://gemilangkatun.com/images/logo.png"}},"datePublished":"2024-12-15","dateModified":"2026-02-24","mainEntityOfPage":{"@type":"WebPage","@id":"https://gemilangkatun.com/artikel-1.html"},"image":"https://gemilangkatun.com/images/og-artikel-1.jpg"}
@@ -431,7 +460,7 @@
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Beranda","item":"https://gemilangkatun.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://gemilangkatun.com/blog.html"},{"@type":"ListItem","position":3,"name":"Paket Family Gathering Seru di Batu Malang"}]}
   </script>
     <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Berapa harga paket family gathering di Batu Malang?","acceptedAnswer":{"@type":"Answer","text":"Harga paket family gathering di Batu Malang bervariasi mulai dari Rp150.000 hingga Rp500.000 per orang, tergantung fasilitas dan jumlah peserta."}},{"@type":"Question","name":"Apa saja yang termasuk dalam paket family gathering?","acceptedAnswer":{"@type":"Answer","text":"Paket biasanya mencakup permainan outbound, makan siang, snack, fasilitator profesional, P3K, serta dokumentasi kegiatan."}},{"@type":"Question","name":"Kapan waktu terbaik untuk family gathering di Batu?","acceptedAnswer":{"@type":"Answer","text":"Waktu terbaik adalah bulan April-Oktober saat musim kering, dengan suhu sejuk antara 18-25°C yang ideal untuk aktivitas outdoor."}}]}
+  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Berapa harga paket family gathering di Batu Malang?","acceptedAnswer":{"@type":"Answer","text":"Harga paket family gathering di Batu Malang bervariasi mulai dari Rp150.000 hingga Rp500.000 per orang, tergantung fasilitas dan jumlah peserta."}},{"@type":"Question","name":"Apa saja yang termasuk dalam paket family gathering?","acceptedAnswer":{"@type":"Answer","text":"Paket biasanya mencakup permainan outbound, makan siang, snack, fasilitator profesional, P3K, serta dokumentasi kegiatan."}},{"@type":"Question","name":"Kapan waktu terbaik untuk family gathering di Batu?","acceptedAnswer":{"@type":"Answer","text":"Waktu terbaik adalah bulan April-Oktober saat musim kering, dengan suhu sejuk antara 18-25Â°C yang ideal untuk aktivitas outdoor."}}]}
   </script>
 </head>
 
@@ -493,7 +522,7 @@
                     <span><i class="bi bi-clock me-1"></i>8 menit baca</span>
                 </div>
 
-                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCDRe_vE9zsR8wKC10VOr3vAaDsUc82kCV6K-t7jo6KBE091lmL7ly6EJVf0GTDdWwRmJ0F6fzX8Iwtcclf6VD5UThiH8G0yckSYkIMwsDsR5WzfBlUxIJe_vXhe5Kg4SaWrg0e5IGquxW_2ZgNBueLSMKIkSpDIN7FGsytwKBcFmoAvmmL3y-fgEj9fMLdgrwuqwclOJmHIKZDYWJshofFqz7CdQXqbhPX77UKhMKk7XiVfjNVxvQl5XZrkgVjoMhNc4NE85oUVTg"
+                <img src="images/artikel-family-gathering.webp"
                     alt="Kegiatan family gathering seru di alam terbuka Batu Malang" width="800" height="450"
                     loading="eager" class="w-100" style="border-radius:16px;height:auto" />
                 <p class="img-caption">Suasana family gathering seru di kawasan wisata alam Batu, Malang dengan
@@ -530,7 +559,7 @@
 
                 <h2 id="mengapa-family-gathering">Mengapa Family Gathering di Batu Malang Sangat Diminati?</h2>
                 <p>Batu Malang menawarkan kombinasi sempurna antara keindahan alam dan fasilitas modern. Berada di
-                    ketinggian 700-1.700 meter di atas permukaan laut, kota ini memiliki suhu rata-rata 18-25°C yang
+                    ketinggian 700-1.700 meter di atas permukaan laut, kota ini memiliki suhu rata-rata 18-25Â°C yang
                     sangat nyaman untuk aktivitas outdoor sepanjang hari. Tidak heran jika banyak keluarga memilih Batu
                     sebagai destinasi family gathering mereka.</p>
                 <p>Selain itu, aksesibilitas Batu Malang sangat baik. Hanya berjarak sekitar 20 km dari pusat Kota
@@ -552,7 +581,7 @@
                 <blockquote>
                     "Family gathering bukan sekadar berkumpul, tapi tentang membangun kenangan indah yang akan diingat
                     setiap anggota keluarga seumur hidup. Batu Malang memberikan latar sempurna untuk momen berharga
-                    tersebut." — Tim Gemilang Katun Outbound
+                    tersebut." â€” Tim Gemilang Katun Outbound
                 </blockquote>
 
                 <h3>Kuliner Khas yang Menggugah Selera</h3>
@@ -560,7 +589,7 @@
                     bakar, sate kelinci, bakso Malang, dan berbagai olahan apel segar. Paket gathering biasanya sudah
                     termasuk konsumsi dengan menu pilihan yang lezat dan bergizi.</p>
 
-                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOpY9nr0-0O3eXg1AH1QxWXLVDydnmNdTcL4i1Sqhmaa8qgpxxviplBIyZZpFSQvUxkIHLmyqgdD2VGfYE8G_dsURDfbMMUwZh5KJYGSdUW64WZbNHN7a5xOCO7JXHaqSRuqlLu30bCxM0lKq5UYFIr6FwtS7Og_eJ1GJYDjb7Zc0oXxw27Lrih3qAHWcIh5bEiJT52prhge3BbsuIVemflL0cWasiLbJK5KaS1MgzENoF89OibPGkitODarY8u13JgJm5JLgl_1Ab"
+                <img src="images/hero-rafting.webp"
                     alt="Aktivitas outdoor seru untuk family gathering di Batu" width="800" height="400"
                     loading="lazy" />
                 <p class="img-caption">Peserta family gathering menikmati aktivitas outdoor di kawasan hijau Batu
@@ -585,29 +614,29 @@
                 <h2 id="tips-memilih-vendor">Tips Memilih Vendor Outbound Batu Malang Terpercaya</h2>
                 <p>Memilih <strong>vendor outbound Batu Malang terpercaya</strong> adalah langkah krusial untuk
                     kesuksesan acara family gathering Anda. Berikut beberapa tips yang perlu diperhatikan:</p>
-                <p><strong>1. Cek Portofolio dan Testimoni</strong> — Vendor yang berpengalaman pasti memiliki
+                <p><strong>1. Cek Portofolio dan Testimoni</strong> â€” Vendor yang berpengalaman pasti memiliki
                     dokumentasi acara sebelumnya. Minta portfolio dan baca testimoni dari klien sebelumnya untuk
                     memastikan kualitas layanan.</p>
-                <p><strong>2. Pastikan Standar Keamanan</strong> — Keamanan adalah prioritas utama. Pastikan vendor
+                <p><strong>2. Pastikan Standar Keamanan</strong> â€” Keamanan adalah prioritas utama. Pastikan vendor
                     memiliki peralatan safety yang memadai, tim P3K terlatih, dan asuransi kecelakaan untuk peserta.</p>
-                <p><strong>3. Fleksibilitas Program</strong> — Vendor terpercaya mampu menyesuaikan program sesuai
+                <p><strong>3. Fleksibilitas Program</strong> â€” Vendor terpercaya mampu menyesuaikan program sesuai
                     kebutuhan dan usia peserta. Gathering keluarga berbeda dengan corporate gathering, sehingga program
                     harus disesuaikan.</p>
-                <p><strong>4. Transparansi Harga</strong> — Pastikan tidak ada biaya tersembunyi. Vendor yang baik akan
+                <p><strong>4. Transparansi Harga</strong> â€” Pastikan tidak ada biaya tersembunyi. Vendor yang baik akan
                     memberikan rincian harga yang jelas dan detail mengenai apa saja yang termasuk dalam paket.</p>
 
                 <h2 id="aktivitas-seru">Aktivitas Seru dalam Family Gathering di Batu Malang</h2>
                 <p>Berbagai aktivitas seru yang bisa dinikmati selama family gathering di Batu Malang antara lain:</p>
-                <p><strong>Outbound Games</strong> — Permainan kelompok yang dirancang untuk membangun kekompakan
+                <p><strong>Outbound Games</strong> â€” Permainan kelompok yang dirancang untuk membangun kekompakan
                     keluarga seperti estafet, tarik tambang, dan lomba balap karung yang cocok untuk semua usia.</p>
-                <p><strong>Nature Walk &amp; Trekking</strong> — Menjelajahi jalur-jalur trekking yang indah di sekitar
+                <p><strong>Nature Walk &amp; Trekking</strong> â€” Menjelajahi jalur-jalur trekking yang indah di sekitar
                     kawasan Batu sambil menikmati keindahan flora dan fauna lokal bersama keluarga.</p>
-                <p><strong>Fun Cooking</strong> — Lomba memasak antar keluarga menggunakan bahan-bahan lokal segar.
+                <p><strong>Fun Cooking</strong> â€” Lomba memasak antar keluarga menggunakan bahan-bahan lokal segar.
                     Aktivitas ini sangat mengasyikkan dan menghasilkan momen kebersamaan yang tak terlupakan.</p>
-                <p><strong>Campfire Night</strong> — Menikmati malam di sekitar api unggun dengan acara hiburan, cerita,
+                <p><strong>Campfire Night</strong> â€” Menikmati malam di sekitar api unggun dengan acara hiburan, cerita,
                     dan BBQ bersama seluruh peserta gathering.</p>
 
-                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUT2zkrF054Er5cYMca9oEDtxCJYw_9FTi1mOn6XGnS8po3v8VgvYgIuSqMno3nGl_JAwTWeY1O-Hq0tmrVfAGzS38ACT56Fx3AFnmnrI69WPploLZSmYA1FzdtSW7v36MwkEu44evfls-w7uY7sColt0yAaNb2tMICkKOZ8QqXIljMfvHw535t-HCkTJbpCIqtnr13YfL-YqXJqj_yJTcok6Qwr6UnWVuthjdUDMILuuQLov9lBk-SRAFTUp5efXE4up9haG5CZmu"
+                <img src="images/hero-alam.webp"
                     alt="Pemandangan indah alam Batu Malang untuk gathering" width="800" height="400" loading="lazy" />
                 <p class="img-caption">Panorama alam Batu Malang yang menjadi latar sempurna untuk kegiatan family
                     gathering outdoor.</p>
@@ -615,7 +644,7 @@
                 <h2 id="persiapan">Persiapan Sebelum Family Gathering</h2>
                 <p>Agar family gathering berjalan lancar, ada beberapa hal yang perlu dipersiapkan:</p>
                 <p>Pertama, <strong>tentukan jumlah peserta</strong> secara akurat agar vendor bisa mempersiapkan
-                    fasilitas yang memadai. Kedua, <strong>pilih waktu yang tepat</strong> — bulan April hingga Oktober
+                    fasilitas yang memadai. Kedua, <strong>pilih waktu yang tepat</strong> â€” bulan April hingga Oktober
                     merupakan waktu terbaik karena cuaca cenderung cerah. Ketiga, <strong>komunikasikan kebutuhan
                         khusus</strong> kepada vendor seperti peserta lansia, anak-anak balita, atau peserta
                     berkebutuhan khusus.</p>
@@ -660,7 +689,7 @@
                 <details class="faq-item">
                     <summary>Kapan waktu terbaik untuk family gathering di Batu?</summary>
                     <div class="faq-body">
-                        <p>Waktu terbaik adalah bulan April-Oktober saat musim kering, dengan suhu sejuk antara 18-25°C
+                        <p>Waktu terbaik adalah bulan April-Oktober saat musim kering, dengan suhu sejuk antara 18-25Â°C
                             yang ideal untuk aktivitas outdoor. Namun Batu bisa dikunjungi sepanjang tahun.</p>
                     </div>
                 </details>
@@ -723,7 +752,7 @@
                 <div class="row g-3">
                     <div class="col-md-4">
                         <div class="related-card h-100">
-                            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1RLw014Wf8Gtem-_ijCrOBBrWb_GI6QdvBctTy5vUzx0B6pbqYyZBunQ9lB-Mg6uWWVTsza_zREQhJ3faR7P1aiAG3yA5rc4ARv1Vma8BCq4Z3vdKX56JUxvA-v7BOwoUB0qpeZPBNoxU7c7-wt0GNAmzHoEqH05JmwUd1_JGyk49xLY8kNvS7jyjl0YKYJ03GqAXuWLM7X2ZYOKYKwgsERI9JHoYdNUlaXSks8JRmza6D4PvXpGW3dbab5fi_zHAeSnlU5fhoKBQ"
+                            <img src="images/artikel-outbound.webp"
                                 alt="Outbound di alam Batu Malang" width="300" height="160" loading="lazy" />
                             <div class="p-3">
                                 <h5 class="fw-bold fs-6 mb-1">Keunggulan Outbound di Alam Terbuka Batu Malang</h5>
@@ -736,7 +765,7 @@
                     </div>
                     <div class="col-md-4">
                         <div class="related-card h-100">
-                            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHDabddBpVNpwKvLUaxVIqoP8fvCCwMXDzn3y9DUzZJO_rqWqODLKbM6_DPafLd0ywhFEudPTS-MbxMY-NOIux7PA7en2tI2CFiGFDSR5o_pt4cTjznq8DW9eZuGYgGClypnifB0LYSJLMrZI2MNHraV3zMW24IwqmbXmNBQiTgZzj52Abk2bzNvcELsGIfthDbIIsZ4qy73XoD9Oh-9VUILflUYI_wqXcfplbrb_vjzg7X5m1_sGsT0Z6ITFvps_SGIpVhzNHPRVl"
+                            <img src="images/artikel-team-building.webp"
                                 alt="Team building di Batu" width="300" height="160" loading="lazy" />
                             <div class="p-3">
                                 <h5 class="fw-bold fs-6 mb-1">Rekomendasi Lokasi Team Building Terbaik di Batu</h5>
@@ -749,7 +778,7 @@
                     </div>
                     <div class="col-md-4">
                         <div class="related-card h-100">
-                            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuByMDv9WJr0_cwoTAtHfDnxdB3N7uco4rth_Zldl606HrZdBzwULlKLMZcvFQEB2-mZ2HgPbRm8csYgBHPKkKoCqCydKvc3vHVWd1AR3y6u_jPAdOKHQY20jLevN_0rxYOB8GjMQIw3HTSiCWuKO7doTeyiyEsbfJ2gKN0DllSr_T0H-wwxz3SFR91i7dzCX9mURsdbx5vfi2NqRMWnmU4Vkq3ETgt5ISv9yEMaGI3HUDaaobNzymbKgoBbZuThiI-JoCFKL52eeGfa"
+                            <img src="images/artikel-tips-vendor.webp"
                                 alt="Tips vendor outbound" width="300" height="160" loading="lazy" />
                             <div class="p-3">
                                 <h5 class="fw-bold fs-6 mb-1">Tips Memilih Vendor Outbound Batu Malang Terpercaya</h5>

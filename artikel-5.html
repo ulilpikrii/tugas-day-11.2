@@ -44,14 +44,27 @@
             --text-muted: #64748b
         }
 
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box
+        }
+
         * {
             font-family: 'Inter', sans-serif
+        }
+
+        html {
+            overflow-x: hidden;
+            max-width: 100vw
         }
 
         body {
             background: var(--bg-light);
             color: var(--text-dark);
-            overflow-x: hidden
+            overflow-x: hidden;
+            max-width: 100vw;
+            position: relative
         }
 
         .navbar {
@@ -214,8 +227,8 @@
         }
 
         .btn-scroll-top {
-            width: 44px;
-            height: 44px;
+            width: 56px;
+            height: 56px;
             border-radius: 50%;
             background: #fff;
             color: var(--text-dark);
@@ -223,7 +236,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 1.2rem;
+            font-size: 1.6rem;
             box-shadow: 0 4px 16px rgba(0, 0, 0, .08);
             transition: all .3s;
             opacity: 0;
@@ -419,6 +432,22 @@
             margin-bottom: 1.5rem;
             font-style: italic
         }
+
+        @media(max-width:768px) {
+            .article-content {
+                padding: 0 0.5rem
+            }
+
+            .author-box {
+                flex-direction: column;
+                text-align: center
+            }
+
+            .float-container {
+                bottom: 18px;
+                right: 18px
+            }
+        }
     </style>
     <script
         type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Tips Memilih Vendor Outbound Batu Malang yang Terpercaya","author":{"@type":"Person","name":"Ulil"},"publisher":{"@type":"Organization","name":"Gemilang Katun Outbound"},"datePublished":"2025-02-01","dateModified":"2026-02-24","mainEntityOfPage":"https://gemilangkatun.com/artikel-5.html"}</script>
@@ -480,7 +509,7 @@
                             class="bi bi-person-fill me-1"></i>Ulil</span><span><i class="bi bi-calendar3 me-1"></i>1
                         Februari 2025</span><span><i class="bi bi-clock me-1"></i>9 menit baca</span></div>
 
-                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuByMDv9WJr0_cwoTAtHfDnxdB3N7uco4rth_Zldl606HrZdBzwULlKLMZcvFQEB2-mZ2HgPbRm8csYgBHPKkKoCqCydKvc3vHVWd1AR3y6u_jPAdOKHQY20jLevN_0rxYOB8GjMQIw3HTSiCWuKO7doTeyiyEsbfJ2gKN0DllSr_T0H-wwxz3SFR91i7dzCX9mURsdbx5vfi2NqRMWnmU4Vkq3ETgt5ISv9yEMaGI3HUDaaobNzymbKgoBbZuThiI-JoCFKL52eeGfa"
+                <img src="images/artikel-tips-vendor.webp"
                     alt="Tips memilih vendor outbound terpercaya di Batu Malang" width="800" height="450"
                     loading="eager" class="w-100" style="border-radius:16px;height:auto" />
                 <p class="img-caption">Memilih vendor outbound yang tepat adalah kunci keberhasilan kegiatan outdoor
@@ -505,7 +534,7 @@
                 <p>Memilih <strong>vendor outbound Batu Malang terpercaya</strong> bukan perkara mudah. Dengan banyaknya
                     penyedia jasa outbound yang bermunculan, Anda perlu cermat dalam menilai mana yang benar-benar
                     profesional dan mana yang hanya menawarkan harga murah tanpa kualitas. Kesalahan dalam memilih
-                    vendor bisa berakibat fatal — mulai dari program yang tidak sesuai ekspektasi, masalah keamanan,
+                    vendor bisa berakibat fatal â€” mulai dari program yang tidak sesuai ekspektasi, masalah keamanan,
                     hingga pengalaman buruk yang merusak citra perusahaan Anda.</p>
 
                 <p>Sebagai salah satu <strong>vendor outbound Batu Malang terpercaya</strong> yang telah beroperasi
@@ -518,8 +547,8 @@
                     bertanggung jawab atas keselamatan, kenyamanan, dan pengalaman seluruh peserta. Vendor yang tepat
                     akan memastikan program berjalan sesuai tujuan, sementara vendor yang buruk bisa menimbulkan risiko
                     kecelakaan, program yang membosankan, atau bahkan kerugian finansial.</p>
-                <p>Dalam konteks Batu Malang yang memiliki medan alam beragam — mulai dari dataran tinggi, hutan, hingga
-                    sungai — kebutuhan akan vendor yang benar-benar mengenal wilayah dan memiliki pengalaman menjadi
+                <p>Dalam konteks Batu Malang yang memiliki medan alam beragam â€” mulai dari dataran tinggi, hutan, hingga
+                    sungai â€” kebutuhan akan vendor yang benar-benar mengenal wilayah dan memiliki pengalaman menjadi
                     semakin krusial. Vendor lokal yang terpercaya memiliki pengetahuan mendalam tentang kondisi medan,
                     cuaca, dan sumber daya alam setempat.</p>
 
@@ -540,7 +569,7 @@
                     yang baik mampu mengadaptasi program secara real-time sesuai kondisi peserta.</p>
 
                 <blockquote>"Vendor outbound terpercaya bukan yang menawarkan harga termurah, melainkan yang memberikan
-                    nilai terbaik — keamanan terjamin, program berkualitas, dan pengalaman tak terlupakan." — Tim
+                    nilai terbaik â€” keamanan terjamin, program berkualitas, dan pengalaman tak terlupakan." â€” Tim
                     Gemilang Katun Outbound</blockquote>
 
                 <h3>4. Standar Keamanan yang Tinggi</h3>
@@ -549,44 +578,44 @@
                     Jangan segan bertanya detail tentang prosedur keamanan mereka.</p>
 
                 <h3>5. Transparansi Harga dan Kontrak</h3>
-                <p>Vendor profesional memberikan quotation yang detail dan transparan. Setiap item biaya harus jelas —
+                <p>Vendor profesional memberikan quotation yang detail dan transparan. Setiap item biaya harus jelas â€”
                     mulai dari biaya fasilitator, peralatan, konsumsi, asuransi, hingga biaya tambahan jika ada. Hindari
                     vendor yang memberikan harga "all-in" tanpa rincian.</p>
 
-                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9Oq27BLJuO5DuH63KOSt3KPh5lp4V5wVhi8vqoL3eahA2tMldqCqoVz3StEyDgRxZPwhwahqnRH4yATvlwwDTK4Lh2dCAqPEOKU3drJ4aAM8jd_yLB42iNxY7Qok0rEgYnlJZsBOMDCtX-AZqyvgYLvlm-6cctpFcFLIcyantN3_yQFYkzdiMHEuOGZ4XCh3CiVO3Bmv6tEx2Z1uBy8i3KbQ0LcDvfgubyXv6IQttHSRUIMoYiraOxWXQmi-edYhG6iaFtCTMsROe"
+                <img src="images/layanan-gathering.webp"
                     alt="Tim outbound profesional di Batu Malang" width="800" height="400" loading="lazy" />
                 <p class="img-caption">Tim fasilitator profesional memandu kegiatan outbound dengan standar keamanan
                     tinggi.</p>
 
                 <h2 id="red-flag">Red Flag yang Harus Diwaspadai</h2>
                 <p>Waspadalah terhadap vendor outbound yang menunjukkan tanda-tanda berikut:</p>
-                <p><strong>Harga Terlalu Murah</strong> — Harga yang jauh di bawah pasaran biasanya mengorbankan
+                <p><strong>Harga Terlalu Murah</strong> â€” Harga yang jauh di bawah pasaran biasanya mengorbankan
                     kualitas peralatan, makanan, atau kompetensi fasilitator. Ingat, keselamatan peserta tidak bisa
                     ditawar dengan harga murah.</p>
-                <p><strong>Tidak Memiliki Kantor Tetap</strong> — Vendor yang serius biasanya memiliki kantor atau
+                <p><strong>Tidak Memiliki Kantor Tetap</strong> â€” Vendor yang serius biasanya memiliki kantor atau
                     basecamp tetap yang bisa Anda kunjungi. Vendor tanpa alamat jelas patut dicurigai.</p>
-                <p><strong>Tidak Bisa Menunjukkan Portofolio</strong> — Jika vendor tidak bisa menunjukkan dokumentasi
+                <p><strong>Tidak Bisa Menunjukkan Portofolio</strong> â€” Jika vendor tidak bisa menunjukkan dokumentasi
                     acara sebelumnya, kemungkinan mereka belum berpengalaman atau kualitas layanannya tidak layak
                     didokumentasikan.</p>
-                <p><strong>Komunikasi yang Lambat dan Tidak Responsif</strong> — Kecepatan dan kualitas komunikasi
+                <p><strong>Komunikasi yang Lambat dan Tidak Responsif</strong> â€” Kecepatan dan kualitas komunikasi
                     sebelum acara mencerminkan bagaimana mereka akan menangani acara Anda. Vendor yang lambat merespons
                     biasanya juga lambat dalam bertindak di lapangan.</p>
-                <p><strong>Menolak Survey Lokasi</strong> — Vendor profesional justru mengajak klien melakukan survey
+                <p><strong>Menolak Survey Lokasi</strong> â€” Vendor profesional justru mengajak klien melakukan survey
                     lokasi untuk memastikan kesesuaian. Jika vendor menolak atau menghindar, ini red flag serius.</p>
 
                 <h2 id="checklist">Checklist Sebelum Memilih Vendor</h2>
                 <p>Gunakan checklist berikut sebagai panduan evaluasi vendor outbound:</p>
-                <p>✅ Memiliki legalitas usaha yang valid<br />
-                    ✅ Portofolio acara yang terdokumentasi dengan baik<br />
-                    ✅ Testimoni positif dari klien sebelumnya<br />
-                    ✅ Tim fasilitator bersertifikat dan berpengalaman<br />
-                    ✅ Prosedur keamanan tertulis yang jelas<br />
-                    ✅ Peralatan safety berstandar dan terawat<br />
-                    ✅ Asuransi kecelakaan untuk peserta<br />
-                    ✅ Quotation yang detail dan transparan<br />
-                    ✅ Bersedia melakukan survey lokasi bersama<br />
-                    ✅ Memiliki contingency plan untuk cuaca buruk<br />
-                    ✅ Responsif dan komunikatif</p>
+                <p>âœ… Memiliki legalitas usaha yang valid<br />
+                    âœ… Portofolio acara yang terdokumentasi dengan baik<br />
+                    âœ… Testimoni positif dari klien sebelumnya<br />
+                    âœ… Tim fasilitator bersertifikat dan berpengalaman<br />
+                    âœ… Prosedur keamanan tertulis yang jelas<br />
+                    âœ… Peralatan safety berstandar dan terawat<br />
+                    âœ… Asuransi kecelakaan untuk peserta<br />
+                    âœ… Quotation yang detail dan transparan<br />
+                    âœ… Bersedia melakukan survey lokasi bersama<br />
+                    âœ… Memiliki contingency plan untuk cuaca buruk<br />
+                    âœ… Responsif dan komunikatif</p>
 
                 <h2 id="keunggulan-gemilang">Keunggulan Gemilang Katun sebagai Vendor Outbound Terpercaya</h2>
                 <p>Gemilang Katun Outbound memenuhi seluruh kriteria vendor outbound terpercaya di atas. Dengan
@@ -614,7 +643,7 @@
                     dilibatkan, dan rincian biaya. Baca kontrak dengan teliti sebelum menandatangani, pastikan semua
                     poin penting tercantum.</p>
 
-                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPMm9VWRjq0hwPf1Wb_FhCwHuqhJbd7EefmQTLOs8sZczkJ31nSX3PNgR-_TVrKbaXCP1qtV40XIOvYCPxQHoYKnegQhr6Vf6lhEopxZFeOGV3b4zf4KqQYMOK6vWInPjHLblVau_otbn4nBYCK7j3HsElxTiEKPNBr40rNDctp6_jcW7UmmUMXscQDhuLc9xmq1wswl4IpGfgxnlc0UMLx9EO5ExtB2EQDfKXLHQKAWjHF4OlcDCnCSZCjup0anxUQcvo81O4RPEX"
+                <img src="images/hero-trekking.webp"
                     alt="Proses konsultasi vendor outbound profesional" width="800" height="400" loading="lazy" />
                 <p class="img-caption">Proses konsultasi dan perencanaan bersama vendor outbound untuk program yang
                     sesuai kebutuhan.</p>
@@ -712,7 +741,7 @@
                 <div class="row g-3">
                     <div class="col-md-4">
                         <div class="related-card h-100"><img
-                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCDRe_vE9zsR8wKC10VOr3vAaDsUc82kCV6K-t7jo6KBE091lmL7ly6EJVf0GTDdWwRmJ0F6fzX8Iwtcclf6VD5UThiH8G0yckSYkIMwsDsR5WzfBlUxIJe_vXhe5Kg4SaWrg0e5IGquxW_2ZgNBueLSMKIkSpDIN7FGsytwKBcFmoAvmmL3y-fgEj9fMLdgrwuqwclOJmHIKZDYWJshofFqz7CdQXqbhPX77UKhMKk7XiVfjNVxvQl5XZrkgVjoMhNc4NE85oUVTg"
+                                src="images/artikel-family-gathering.webp"
                                 alt="Family gathering" width="300" height="160" loading="lazy" />
                             <div class="p-3">
                                 <h5 class="fw-bold fs-6 mb-1">Paket Family Gathering Seru di Batu Malang</h5>
@@ -724,7 +753,7 @@
                     </div>
                     <div class="col-md-4">
                         <div class="related-card h-100"><img
-                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1RLw014Wf8Gtem-_ijCrOBBrWb_GI6QdvBctTy5vUzx0B6pbqYyZBunQ9lB-Mg6uWWVTsza_zREQhJ3faR7P1aiAG3yA5rc4ARv1Vma8BCq4Z3vdKX56JUxvA-v7BOwoUB0qpeZPBNoxU7c7-wt0GNAmzHoEqH05JmwUd1_JGyk49xLY8kNvS7jyjl0YKYJ03GqAXuWLM7X2ZYOKYKwgsERI9JHoYdNUlaXSks8JRmza6D4PvXpGW3dbab5fi_zHAeSnlU5fhoKBQ"
+                                src="images/artikel-outbound.webp"
                                 alt="Outbound alam terbuka" width="300" height="160" loading="lazy" />
                             <div class="p-3">
                                 <h5 class="fw-bold fs-6 mb-1">Keunggulan Outbound di Alam Terbuka Batu</h5>
@@ -736,7 +765,7 @@
                     </div>
                     <div class="col-md-4">
                         <div class="related-card h-100"><img
-                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAE8eR2zqE4fzF3D1zuwes-barxhk_N0EzD1AWEfl4MAHG9qwi0KUOLHqur1zmSAt1-JtyjtgcAvDT0xiLDS0Xed427tcKlqDlBzga-EjI4XCkVieJ12CU3_OjtMPX1agVewt0NlFmV4QpaUEuagpVgvPpgDIJd9kJE3m7H_xnPD49WRpthUvco5MEKc6sbr5jhDtGzBmcKshonfyDZCFozGqpD2m6Y9PNCHPKdBC9TU4MYt_lrVdrs5KrNzTZwBHrIV-U0h8Shxn2m"
+                                src="images/artikel-gathering-perusahaan.webp"
                                 alt="Gathering perusahaan" width="300" height="160" loading="lazy" />
                             <div class="p-3">
                                 <h5 class="fw-bold fs-6 mb-1">Cara Sukses Gathering Perusahaan di Batu</h5>

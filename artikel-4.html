@@ -44,14 +44,27 @@
             --text-muted: #64748b
         }
 
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box
+        }
+
         * {
             font-family: 'Inter', sans-serif
+        }
+
+        html {
+            overflow-x: hidden;
+            max-width: 100vw
         }
 
         body {
             background: var(--bg-light);
             color: var(--text-dark);
-            overflow-x: hidden
+            overflow-x: hidden;
+            max-width: 100vw;
+            position: relative
         }
 
         .navbar {
@@ -214,8 +227,8 @@
         }
 
         .btn-scroll-top {
-            width: 44px;
-            height: 44px;
+            width: 56px;
+            height: 56px;
             border-radius: 50%;
             background: #fff;
             color: var(--text-dark);
@@ -223,7 +236,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 1.2rem;
+            font-size: 1.6rem;
             box-shadow: 0 4px 16px rgba(0, 0, 0, .08);
             transition: all .3s;
             opacity: 0;
@@ -419,6 +432,22 @@
             margin-bottom: 1.5rem;
             font-style: italic
         }
+
+        @media(max-width:768px) {
+            .article-content {
+                padding: 0 0.5rem
+            }
+
+            .author-box {
+                flex-direction: column;
+                text-align: center
+            }
+
+            .float-container {
+                bottom: 18px;
+                right: 18px
+            }
+        }
     </style>
     <script
         type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Cara Sukses Mengadakan Gathering Perusahaan di Batu Malang","author":{"@type":"Person","name":"Ulil"},"publisher":{"@type":"Organization","name":"Gemilang Katun Outbound"},"datePublished":"2025-01-15","dateModified":"2026-02-24","mainEntityOfPage":"https://gemilangkatun.com/artikel-4.html"}</script>
@@ -480,7 +509,7 @@
                             class="bi bi-person-fill me-1"></i>Ulil</span><span><i class="bi bi-calendar3 me-1"></i>15
                         Januari 2025</span><span><i class="bi bi-clock me-1"></i>10 menit baca</span></div>
 
-                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAE8eR2zqE4fzF3D1zuwes-barxhk_N0EzD1AWEfl4MAHG9qwi0KUOLHqur1zmSAt1-JtyjtgcAvDT0xiLDS0Xed427tcKlqDlBzga-EjI4XCkVieJ12CU3_OjtMPX1agVewt0NlFmV4QpaUEuagpVgvPpgDIJd9kJE3m7H_xnPD49WRpthUvco5MEKc6sbr5jhDtGzBmcKshonfyDZCFozGqpD2m6Y9PNCHPKdBC9TU4MYt_lrVdrs5KrNzTZwBHrIV-U0h8Shxn2m"
+                <img src="images/artikel-gathering-perusahaan.webp"
                     alt="Gathering perusahaan seru di Batu Malang" width="800" height="450" loading="eager"
                     class="w-100" style="border-radius:16px;height:auto" />
                 <p class="img-caption">Tim perusahaan menikmati kegiatan gathering outdoor di kawasan wisata alam Batu,
@@ -527,7 +556,7 @@
 
                 <blockquote>"Gathering perusahaan yang baik bukan hanya tentang bersenang-senang, tapi tentang
                     menciptakan momen yang membuat setiap karyawan merasa diperhatikan dan dihargai sebagai bagian
-                    penting dari tim." — Tim Gemilang Katun Outbound</blockquote>
+                    penting dari tim." â€” Tim Gemilang Katun Outbound</blockquote>
 
                 <h2 id="tahap-perencanaan">Tahap Perencanaan yang Matang</h2>
                 <h3>1. Tentukan Tujuan Gathering</h3>
@@ -546,7 +575,7 @@
                     faktor usia, kondisi fisik, preferensi makanan, dan alergi. Informasi ini sangat penting untuk
                     memastikan program gathering inklusif dan nyaman bagi seluruh peserta.</p>
 
-                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNmwmDyHcfAoNym9NjNGZgX93oWQOBzhoD4aZwtfBHdpgoogmsX4DwTxEopLQG7uCK6Uxsv21jQUl7Ajy73jpAxoXBqoCBmOqveeL3cwEabinLUtBl1BN7PoYYtlx_zSyjt5OL7iPcfpMzlDyvQSikMWqnpQ405RfX6d2O7Rv35V-WW_7eAOSBd-GtPy96RhuvkQ0gy0NZX7oX9sTRgddOMZoJ1na_g5y6yFErRVgQwZnIIFNFVF3cfIqT9ZzouaoFJ-id0VuW3pGw"
+                <img src="images/layanan-rafting.webp"
                     alt="Aktivitas outbound seru untuk gathering perusahaan" width="800" height="400" loading="lazy" />
                 <p class="img-caption">Peserta gathering menikmati aktivitas outbound seru yang dipandu oleh fasilitator
                     profesional.</p>
@@ -554,16 +583,16 @@
                 <h2 id="memilih-vendor">Memilih Vendor Outbound yang Tepat</h2>
                 <p>Pemilihan <strong>vendor outbound Batu Malang terpercaya</strong> adalah langkah krusial yang
                     menentukan keberhasilan gathering. Berikut kriteria vendor yang harus Anda pertimbangkan:</p>
-                <p><strong>Pengalaman dan Reputasi</strong> — Pilih vendor yang telah berpengalaman menangani gathering
+                <p><strong>Pengalaman dan Reputasi</strong> â€” Pilih vendor yang telah berpengalaman menangani gathering
                     perusahaan dengan skala serupa. Cek testimoni dan portofolio acara sebelumnya untuk memastikan
                     kualitas layanan.</p>
-                <p><strong>Fleksibilitas Program</strong> — Vendor yang baik mampu menyusun program custom sesuai tujuan
+                <p><strong>Fleksibilitas Program</strong> â€” Vendor yang baik mampu menyusun program custom sesuai tujuan
                     dan karakteristik perusahaan Anda. Hindari vendor yang hanya menawarkan template program baku tanpa
                     penyesuaian.</p>
-                <p><strong>Tim Fasilitator Profesional</strong> — Kualitas fasilitator sangat menentukan keberhasilan
+                <p><strong>Tim Fasilitator Profesional</strong> â€” Kualitas fasilitator sangat menentukan keberhasilan
                     gathering. Pastikan vendor memiliki tim fasilitator bersertifikat yang ramah, energik, dan mampu
                     mengelola dinamika kelompok dengan baik.</p>
-                <p><strong>Standar Keamanan</strong> — Pastikan vendor memiliki prosedur keamanan yang jelas, peralatan
+                <p><strong>Standar Keamanan</strong> â€” Pastikan vendor memiliki prosedur keamanan yang jelas, peralatan
                     safety berstandar, dan tim P3K terlatih untuk menangani situasi darurat.</p>
 
                 <h2 id="program-gathering">Program Gathering yang Efektif</h2>
@@ -583,13 +612,13 @@
                     diterapkan di kantor.</p>
 
                 <h2 id="tips-sukses">Tips Sukses Gathering Perusahaan di Batu Malang</h2>
-                <p><strong>Libatkan Manajemen</strong> — Kehadiran dan partisipasi aktif manajemen puncak memberikan
+                <p><strong>Libatkan Manajemen</strong> â€” Kehadiran dan partisipasi aktif manajemen puncak memberikan
                     pesan kuat tentang pentingnya kebersamaan tim. Ini juga kesempatan bagi manajemen untuk mengenal
                     karyawan secara lebih personal.</p>
-                <p><strong>Dokumentasi Profesional</strong> — Siapkan dokumentasi foto dan video profesional untuk
+                <p><strong>Dokumentasi Profesional</strong> â€” Siapkan dokumentasi foto dan video profesional untuk
                     mengabadikan momen-momen berharga. Konten ini bisa digunakan untuk internal branding dan media
                     sosial perusahaan.</p>
-                <p><strong>Evaluasi Pasca Acara</strong> — Lakukan evaluasi setelah acara untuk mengukur efektivitas
+                <p><strong>Evaluasi Pasca Acara</strong> â€” Lakukan evaluasi setelah acara untuk mengukur efektivitas
                     program dan mendapatkan feedback untuk perbaikan di masa depan.</p>
 
                 <h2 id="kesalahan-umum">Kesalahan Umum yang Harus Dihindari</h2>
@@ -598,7 +627,7 @@
                     cukup, memaksa peserta mengikuti aktivitas yang terlalu berat, dan tidak melakukan briefing keamanan
                     sebelum aktivitas dimulai.</p>
 
-                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUT2zkrF054Er5cYMca9oEDtxCJYw_9FTi1mOn6XGnS8po3v8VgvYgIuSqMno3nGl_JAwTWeY1O-Hq0tmrVfAGzS38ACT56Fx3AFnmnrI69WPploLZSmYA1FzdtSW7v36MwkEu44evfls-w7uY7sColt0yAaNb2tMICkKOZ8QqXIljMfvHw535t-HCkTJbpCIqtnr13YfL-YqXJqj_yJTcok6Qwr6UnWVuthjdUDMILuuQLov9lBk-SRAFTUp5efXE4up9haG5CZmu"
+                <img src="images/hero-alam.webp"
                     alt="Pemandangan indah Batu Malang untuk gathering" width="800" height="400" loading="lazy" />
                 <p class="img-caption">Pemandangan spektakuler pegunungan Batu yang menjadi latar belakang gathering
                     perusahaan.</p>
@@ -682,7 +711,7 @@
                 <div class="row g-3">
                     <div class="col-md-4">
                         <div class="related-card h-100"><img
-                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCDRe_vE9zsR8wKC10VOr3vAaDsUc82kCV6K-t7jo6KBE091lmL7ly6EJVf0GTDdWwRmJ0F6fzX8Iwtcclf6VD5UThiH8G0yckSYkIMwsDsR5WzfBlUxIJe_vXhe5Kg4SaWrg0e5IGquxW_2ZgNBueLSMKIkSpDIN7FGsytwKBcFmoAvmmL3y-fgEj9fMLdgrwuqwclOJmHIKZDYWJshofFqz7CdQXqbhPX77UKhMKk7XiVfjNVxvQl5XZrkgVjoMhNc4NE85oUVTg"
+                                src="images/artikel-family-gathering.webp"
                                 alt="Family gathering" width="300" height="160" loading="lazy" />
                             <div class="p-3">
                                 <h5 class="fw-bold fs-6 mb-1">Paket Family Gathering Seru di Batu Malang</h5>
@@ -694,7 +723,7 @@
                     </div>
                     <div class="col-md-4">
                         <div class="related-card h-100"><img
-                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHDabddBpVNpwKvLUaxVIqoP8fvCCwMXDzn3y9DUzZJO_rqWqODLKbM6_DPafLd0ywhFEudPTS-MbxMY-NOIux7PA7en2tI2CFiGFDSR5o_pt4cTjznq8DW9eZuGYgGClypnifB0LYSJLMrZI2MNHraV3zMW24IwqmbXmNBQiTgZzj52Abk2bzNvcELsGIfthDbIIsZ4qy73XoD9Oh-9VUILflUYI_wqXcfplbrb_vjzg7X5m1_sGsT0Z6ITFvps_SGIpVhzNHPRVl"
+                                src="images/artikel-team-building.webp"
                                 alt="Team building" width="300" height="160" loading="lazy" />
                             <div class="p-3">
                                 <h5 class="fw-bold fs-6 mb-1">Rekomendasi Lokasi Team Building di Batu</h5>
@@ -706,7 +735,7 @@
                     </div>
                     <div class="col-md-4">
                         <div class="related-card h-100"><img
-                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuByMDv9WJr0_cwoTAtHfDnxdB3N7uco4rth_Zldl606HrZdBzwULlKLMZcvFQEB2-mZ2HgPbRm8csYgBHPKkKoCqCydKvc3vHVWd1AR3y6u_jPAdOKHQY20jLevN_0rxYOB8GjMQIw3HTSiCWuKO7doTeyiyEsbfJ2gKN0DllSr_T0H-wwxz3SFR91i7dzCX9mURsdbx5vfi2NqRMWnmU4Vkq3ETgt5ISv9yEMaGI3HUDaaobNzymbKgoBbZuThiI-JoCFKL52eeGfa"
+                                src="images/artikel-tips-vendor.webp"
                                 alt="Tips vendor" width="300" height="160" loading="lazy" />
                             <div class="p-3">
                                 <h5 class="fw-bold fs-6 mb-1">Tips Memilih Vendor Outbound Terpercaya</h5>

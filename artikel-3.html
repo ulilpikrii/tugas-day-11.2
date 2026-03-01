@@ -43,14 +43,27 @@
             --text-muted: #64748b
         }
 
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box
+        }
+
         * {
             font-family: 'Inter', sans-serif
+        }
+
+        html {
+            overflow-x: hidden;
+            max-width: 100vw
         }
 
         body {
             background: var(--bg-light);
             color: var(--text-dark);
-            overflow-x: hidden
+            overflow-x: hidden;
+            max-width: 100vw;
+            position: relative
         }
 
         .navbar {
@@ -213,8 +226,8 @@
         }
 
         .btn-scroll-top {
-            width: 44px;
-            height: 44px;
+            width: 56px;
+            height: 56px;
             border-radius: 50%;
             background: #fff;
             color: var(--text-dark);
@@ -222,7 +235,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 1.2rem;
+            font-size: 1.6rem;
             box-shadow: 0 4px 16px rgba(0, 0, 0, .08);
             transition: all .3s;
             opacity: 0;
@@ -418,6 +431,22 @@
             margin-bottom: 1.5rem;
             font-style: italic
         }
+
+        @media(max-width:768px) {
+            .article-content {
+                padding: 0 0.5rem
+            }
+
+            .author-box {
+                flex-direction: column;
+                text-align: center
+            }
+
+            .float-container {
+                bottom: 18px;
+                right: 18px
+            }
+        }
     </style>
     <script
         type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Rekomendasi Lokasi Outbound Team Building Terbaik di Batu Malang","author":{"@type":"Person","name":"Ulil"},"publisher":{"@type":"Organization","name":"Gemilang Katun Outbound"},"datePublished":"2025-01-05","dateModified":"2026-02-24","mainEntityOfPage":"https://gemilangkatun.com/artikel-3.html"}</script>
@@ -479,7 +508,7 @@
                             class="bi bi-person-fill me-1"></i>Ulil</span><span><i class="bi bi-calendar3 me-1"></i>5
                         Januari 2025</span><span><i class="bi bi-clock me-1"></i>10 menit baca</span></div>
 
-                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHDabddBpVNpwKvLUaxVIqoP8fvCCwMXDzn3y9DUzZJO_rqWqODLKbM6_DPafLd0ywhFEudPTS-MbxMY-NOIux7PA7en2tI2CFiGFDSR5o_pt4cTjznq8DW9eZuGYgGClypnifB0LYSJLMrZI2MNHraV3zMW24IwqmbXmNBQiTgZzj52Abk2bzNvcELsGIfthDbIIsZ4qy73XoD9Oh-9VUILflUYI_wqXcfplbrb_vjzg7X5m1_sGsT0Z6ITFvps_SGIpVhzNHPRVl"
+                <img src="images/artikel-team-building.webp"
                     alt="Lokasi outbound team building di alam Batu Malang" width="800" height="450" loading="eager"
                     class="w-100" style="border-radius:16px;height:auto" />
                 <p class="img-caption">Salah satu lokasi outbound terbaik di kawasan pegunungan Batu, Malang dengan
@@ -523,13 +552,13 @@
                     anggota tim.</p>
 
                 <blockquote>"Lokasi yang tepat bisa mengubah acara team building biasa menjadi pengalaman transformatif
-                    yang mengubah cara tim Anda bekerja sama." — Tim Gemilang Katun Outbound</blockquote>
+                    yang mengubah cara tim Anda bekerja sama." â€” Tim Gemilang Katun Outbound</blockquote>
 
                 <h2 id="lokasi-1">1. Kawasan Coban Rondo dan Sekitarnya</h2>
                 <h3>Deskripsi Lokasi</h3>
                 <p>Terletak di Kecamatan Pujon, kawasan Coban Rondo menawarkan pemandangan air terjun spektakuler yang
                     dikelilingi hutan tropis lebat. Area ini berada di ketinggian sekitar 1.135 mdpl dengan suhu
-                    rata-rata 18-22°C, sangat ideal untuk aktivitas outdoor yang intens.</p>
+                    rata-rata 18-22Â°C, sangat ideal untuk aktivitas outdoor yang intens.</p>
                 <h3>Kelebihan untuk Team Building</h3>
                 <p>Kawasan ini memiliki area luas yang bisa menampung hingga 300 peserta. Tersedia jalur trekking dengan
                     berbagai tingkat kesulitan, area camping, dan spot-spot alami yang sempurna untuk games outbound.
@@ -547,7 +576,7 @@
                     terbuka. Lokasi ini sangat cocok untuk perusahaan yang menginginkan suasana santai namun tetap
                     produktif.</p>
 
-                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCasaSwCUIcYXDci1mRQQ7c4z38kzW6cafT-Cg6ClYpbGsU0ITP4xEdu3sn-9zI4r1myfGOUIfXyxfDCHtwAgnpVWU2AJoIhQXGGs4Lnc21SPa2An74H8CpzcKitViXMYvMaLXVscHj12h8WsSBXMhZYap903fvM2MGwYXk91Ibr77qKPWAW3bhxXEmaMEBtSB2vdwyfo-sL4vanmdva1b8nGxEE6ZJlMUsZQjaiCbbzTiWMyVycQ2go1DD2ohnch0rwL2Ev9UeMxKt"
+                <img src="images/layanan-camping.webp"
                     alt="Area outbound di perkebunan Batu Malang" width="800" height="400" loading="lazy" />
                 <p class="img-caption">Area perkebunan di kawasan Batu yang menjadi tempat favorit untuk kegiatan
                     outbound dan camping.</p>
@@ -577,16 +606,16 @@
 
                 <h2 id="kriteria">Kriteria Memilih Lokasi Outbound Ideal</h2>
                 <p>Saat memilih lokasi outbound, pertimbangkan beberapa kriteria berikut:</p>
-                <p><strong>Kapasitas Area</strong> — Pastikan lokasi mampu menampung seluruh peserta dengan nyaman. Area
+                <p><strong>Kapasitas Area</strong> â€” Pastikan lokasi mampu menampung seluruh peserta dengan nyaman. Area
                     yang terlalu sempit akan menghambat aktivitas dan mengurangi kenyamanan peserta.</p>
-                <p><strong>Aksesibilitas</strong> — Pilih lokasi yang mudah dijangkau dengan kendaraan besar (bus).
+                <p><strong>Aksesibilitas</strong> â€” Pilih lokasi yang mudah dijangkau dengan kendaraan besar (bus).
                     Jalan akses yang rusak akan membuat peserta kelelahan sebelum aktivitas dimulai.</p>
-                <p><strong>Fasilitas Pendukung</strong> — Toilet, mushola, dan area parkir adalah fasilitas dasar yang
+                <p><strong>Fasilitas Pendukung</strong> â€” Toilet, mushola, dan area parkir adalah fasilitas dasar yang
                     harus tersedia. Untuk program menginap, pastikan tersedia penginapan yang memadai.</p>
-                <p><strong>Keamanan</strong> — Pastikan lokasi memiliki akses ke fasilitas kesehatan terdekat dan
+                <p><strong>Keamanan</strong> â€” Pastikan lokasi memiliki akses ke fasilitas kesehatan terdekat dan
                     memiliki jalur evakuasi yang jelas untuk situasi darurat.</p>
 
-                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAu4OsSbjJS-tNTYehYfdt5b18xumil1p4qU0uUezGJXmxO2f5XDVGYrkvIO43doDCXz_D6TkyqWVjJ0ckd7kHUt4vnaIhz221AfWU5wTLlkwL21wQp_NJ_El3T1hofDbaK5TKKYU6H5cnygVv97ovfRkJcg9IHk_yiDNXCPxIB6rehlb9s_HRoEFQE2Y2ESqMLnAn30bN2VajzPa-aUh4YrGgRTM1VXwf7zJbdClaXj905IZa8QFLyz8q4gUSOAyH1AiGRFWXe93rN"
+                <img src="images/layanan-trekking.webp"
                     alt="Trekking alam di lokasi outbound Batu Malang" width="800" height="400" loading="lazy" />
                 <p class="img-caption">Jalur trekking alam hijau yang menjadi bagian dari program outbound team building
                     di Batu Malang.</p>
@@ -641,7 +670,7 @@
                 <h2 id="kesimpulan">Kesimpulan</h2>
                 <p>Batu Malang menawarkan beragam <strong>lokasi outbound team building</strong> berkualitas yang cocok
                     untuk berbagai skala acara. Dari kawasan air terjun Coban Rondo, perkebunan apel Bumiaji, hutan
-                    pinus Cangar, hingga Lembah Indah yang premium — setiap lokasi memiliki pesona tersendiri. Kunci
+                    pinus Cangar, hingga Lembah Indah yang premium â€” setiap lokasi memiliki pesona tersendiri. Kunci
                     suksesnya adalah memilih <strong>vendor outbound Batu Malang terpercaya</strong> yang mengenal
                     setiap lokasi dengan baik dan mampu merancang program yang sesuai dengan kebutuhan tim Anda.</p>
                 <p>Ingin survey lokasi outbound terbaik? <a
@@ -674,7 +703,7 @@
                 <div class="row g-3">
                     <div class="col-md-4">
                         <div class="related-card h-100"><img
-                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCDRe_vE9zsR8wKC10VOr3vAaDsUc82kCV6K-t7jo6KBE091lmL7ly6EJVf0GTDdWwRmJ0F6fzX8Iwtcclf6VD5UThiH8G0yckSYkIMwsDsR5WzfBlUxIJe_vXhe5Kg4SaWrg0e5IGquxW_2ZgNBueLSMKIkSpDIN7FGsytwKBcFmoAvmmL3y-fgEj9fMLdgrwuqwclOJmHIKZDYWJshofFqz7CdQXqbhPX77UKhMKk7XiVfjNVxvQl5XZrkgVjoMhNc4NE85oUVTg"
+                                src="images/artikel-family-gathering.webp"
                                 alt="Family gathering Batu" width="300" height="160" loading="lazy" />
                             <div class="p-3">
                                 <h5 class="fw-bold fs-6 mb-1">Paket Family Gathering Seru di Batu Malang</h5>
@@ -686,7 +715,7 @@
                     </div>
                     <div class="col-md-4">
                         <div class="related-card h-100"><img
-                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAE8eR2zqE4fzF3D1zuwes-barxhk_N0EzD1AWEfl4MAHG9qwi0KUOLHqur1zmSAt1-JtyjtgcAvDT0xiLDS0Xed427tcKlqDlBzga-EjI4XCkVieJ12CU3_OjtMPX1agVewt0NlFmV4QpaUEuagpVgvPpgDIJd9kJE3m7H_xnPD49WRpthUvco5MEKc6sbr5jhDtGzBmcKshonfyDZCFozGqpD2m6Y9PNCHPKdBC9TU4MYt_lrVdrs5KrNzTZwBHrIV-U0h8Shxn2m"
+                                src="images/artikel-gathering-perusahaan.webp"
                                 alt="Gathering perusahaan" width="300" height="160" loading="lazy" />
                             <div class="p-3">
                                 <h5 class="fw-bold fs-6 mb-1">Cara Sukses Mengadakan Gathering Perusahaan</h5>
@@ -698,7 +727,7 @@
                     </div>
                     <div class="col-md-4">
                         <div class="related-card h-100"><img
-                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuByMDv9WJr0_cwoTAtHfDnxdB3N7uco4rth_Zldl606HrZdBzwULlKLMZcvFQEB2-mZ2HgPbRm8csYgBHPKkKoCqCydKvc3vHVWd1AR3y6u_jPAdOKHQY20jLevN_0rxYOB8GjMQIw3HTSiCWuKO7doTeyiyEsbfJ2gKN0DllSr_T0H-wwxz3SFR91i7dzCX9mURsdbx5vfi2NqRMWnmU4Vkq3ETgt5ISv9yEMaGI3HUDaaobNzymbKgoBbZuThiI-JoCFKL52eeGfa"
+                                src="images/artikel-tips-vendor.webp"
                                 alt="Tips vendor outbound" width="300" height="160" loading="lazy" />
                             <div class="p-3">
                                 <h5 class="fw-bold fs-6 mb-1">Tips Memilih Vendor Outbound Terpercaya</h5>

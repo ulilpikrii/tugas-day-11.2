@@ -45,14 +45,27 @@
             --text-muted: #64748b
         }
 
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box
+        }
+
         * {
             font-family: 'Inter', sans-serif
+        }
+
+        html {
+            overflow-x: hidden;
+            max-width: 100vw
         }
 
         body {
             background: var(--bg-light);
             color: var(--text-dark);
-            overflow-x: hidden
+            overflow-x: hidden;
+            max-width: 100vw;
+            position: relative
         }
 
         .navbar {
@@ -215,8 +228,8 @@
         }
 
         .btn-scroll-top {
-            width: 44px;
-            height: 44px;
+            width: 56px;
+            height: 56px;
             border-radius: 50%;
             background: #fff;
             color: var(--text-dark);
@@ -224,7 +237,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 1.2rem;
+            font-size: 1.6rem;
             box-shadow: 0 4px 16px rgba(0, 0, 0, .08);
             transition: all .3s;
             opacity: 0;
@@ -421,6 +434,22 @@
             margin-bottom: 1.5rem;
             font-style: italic
         }
+
+        @media(max-width:768px) {
+            .article-content {
+                padding: 0 0.5rem
+            }
+
+            .author-box {
+                flex-direction: column;
+                text-align: center
+            }
+
+            .float-container {
+                bottom: 18px;
+                right: 18px
+            }
+        }
     </style>
     <script
         type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Keunggulan Outbound di Alam Terbuka Batu Malang","description":"Mengapa kegiatan outbound di alam terbuka Batu Malang menjadi pilihan terbaik bagi perusahaan dan komunitas.","author":{"@type":"Person","name":"Ulil"},"publisher":{"@type":"Organization","name":"Gemilang Katun Outbound"},"datePublished":"2024-12-20","dateModified":"2026-02-24","mainEntityOfPage":"https://gemilangkatun.com/artikel-2.html"}</script>
@@ -482,7 +511,7 @@
                             class="bi bi-person-fill me-1"></i>Ulil</span><span><i class="bi bi-calendar3 me-1"></i>20
                         Desember 2024</span><span><i class="bi bi-clock me-1"></i>9 menit baca</span></div>
 
-                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1RLw014Wf8Gtem-_ijCrOBBrWb_GI6QdvBctTy5vUzx0B6pbqYyZBunQ9lB-Mg6uWWVTsza_zREQhJ3faR7P1aiAG3yA5rc4ARv1Vma8BCq4Z3vdKX56JUxvA-v7BOwoUB0qpeZPBNoxU7c7-wt0GNAmzHoEqH05JmwUd1_JGyk49xLY8kNvS7jyjl0YKYJ03GqAXuWLM7X2ZYOKYKwgsERI9JHoYdNUlaXSks8JRmza6D4PvXpGW3dbab5fi_zHAeSnlU5fhoKBQ"
+                <img src="images/artikel-outbound.webp"
                     alt="Kegiatan outbound di alam terbuka Batu Malang" width="800" height="450" loading="eager"
                     class="w-100" style="border-radius:16px;height:auto" />
                 <p class="img-caption">Tim peserta outbound menikmati aktivitas seru di tengah keindahan alam Batu,
@@ -521,7 +550,7 @@
                     meningkatkan kebugaran tubuh peserta. Berbeda dengan olahraga di gym yang terasa monoton, outbound
                     di alam memberikan variasi gerakan yang menyenangkan sehingga peserta tidak merasa sedang
                     berolahraga.</p>
-                <p>Medan alam yang bervariasi — mulai dari jalur berbatu, tanjakan bukit, hingga penyeberangan sungai —
+                <p>Medan alam yang bervariasi â€” mulai dari jalur berbatu, tanjakan bukit, hingga penyeberangan sungai â€”
                     melatih otot-otot tubuh secara menyeluruh. Hal ini membuat outbound menjadi aktivitas fisik yang
                     komplit dan efektif untuk menjaga kesehatan.</p>
 
@@ -532,7 +561,7 @@
                     secara signifikan.</p>
 
                 <blockquote>"Alam adalah gym terbesar dan terindah yang pernah diciptakan. Di Batu Malang, setiap
-                    langkah adalah latihan, setiap pemandangan adalah motivasi." — Tim Fasilitator Gemilang Katun
+                    langkah adalah latihan, setiap pemandangan adalah motivasi." â€” Tim Fasilitator Gemilang Katun
                 </blockquote>
 
                 <h2 id="manfaat-mental">Manfaat Mental dan Psikologis</h2>
@@ -551,7 +580,7 @@
                     ditaklukkan akan meningkatkan rasa percaya diri dan keberanian peserta untuk menghadapi tantangan
                     baru.</p>
 
-                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPMm9VWRjq0hwPf1Wb_FhCwHuqhJbd7EefmQTLOs8sZczkJ31nSX3PNgR-_TVrKbaXCP1qtV40XIOvYCPxQHoYKnegQhr6Vf6lhEopxZFeOGV3b4zf4KqQYMOK6vWInPjHLblVau_otbn4nBYCK7j3HsElxTiEKPNBr40rNDctp6_jcW7UmmUMXscQDhuLc9xmq1wswl4IpGfgxnlc0UMLx9EO5ExtB2EQDfKXLHQKAWjHF4OlcDCnCSZCjup0anxUQcvo81O4RPEX"
+                <img src="images/hero-trekking.webp"
                     alt="Trekking di hutan Batu Malang membangun kepercayaan diri" width="800" height="400"
                     loading="lazy" />
                 <p class="img-caption">Peserta outbound melatih keberanian melalui trekking di hutan alami kawasan Batu.
@@ -569,18 +598,18 @@
                     memadai menjadikan Batu sebagai destinasi outbound yang aman dan nyaman.</p>
 
                 <h3>Cuaca yang Mendukung Sepanjang Tahun</h3>
-                <p>Dengan suhu rata-rata 18-25°C, Batu Malang menawarkan cuaca yang ideal untuk aktivitas outdoor
+                <p>Dengan suhu rata-rata 18-25Â°C, Batu Malang menawarkan cuaca yang ideal untuk aktivitas outdoor
                     sepanjang tahun. Musim kemarau (April-Oktober) adalah waktu terbaik, namun bahkan di musim hujan,
                     banyak area yang tetap bisa digunakan untuk kegiatan outbound dengan penyesuaian program.</p>
 
                 <h2 id="jenis-kegiatan">Jenis Kegiatan Outbound Populer di Alam Terbuka Batu</h2>
-                <p><strong>Adventure Activities</strong> — Meliputi flying fox, rappelling, river tubing, dan paintball
+                <p><strong>Adventure Activities</strong> â€” Meliputi flying fox, rappelling, river tubing, dan paintball
                     yang memacu adrenalin peserta sambil melatih keberanian dan kerja sama tim.</p>
-                <p><strong>Nature Exploration</strong> — Trekking ke air terjun tersembunyi, bird watching, dan
+                <p><strong>Nature Exploration</strong> â€” Trekking ke air terjun tersembunyi, bird watching, dan
                     botanical walk yang memberikan edukasi tentang kekayaan alam Batu Malang.</p>
-                <p><strong>Team Challenges</strong> — Permainan kelompok yang dirancang khusus untuk membangun
+                <p><strong>Team Challenges</strong> â€” Permainan kelompok yang dirancang khusus untuk membangun
                     komunikasi, problem solving, dan leadership seperti survival game dan treasure hunt.</p>
-                <p><strong>Creative Outdoor</strong> — Aktivitas kreatif di alam terbuka seperti outdoor cooking, craft
+                <p><strong>Creative Outdoor</strong> â€” Aktivitas kreatif di alam terbuka seperti outdoor cooking, craft
                     making menggunakan bahan alam, dan photography walk yang mengasah sisi kreatif peserta.</p>
 
                 <h2 id="vendor-terpercaya">Peran Vendor Outbound Terpercaya</h2>
@@ -592,7 +621,7 @@
                     mengelola kegiatan dengan aman. Mereka juga memiliki peralatan safety berstandar tinggi dan prosedur
                     darurat yang jelas untuk mengantisipasi situasi tidak terduga.</p>
 
-                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9Oq27BLJuO5DuH63KOSt3KPh5lp4V5wVhi8vqoL3eahA2tMldqCqoVz3StEyDgRxZPwhwahqnRH4yATvlwwDTK4Lh2dCAqPEOKU3drJ4aAM8jd_yLB42iNxY7Qok0rEgYnlJZsBOMDCtX-AZqyvgYLvlm-6cctpFcFLIcyantN3_yQFYkzdiMHEuOGZ4XCh3CiVO3Bmv6tEx2Z1uBy8i3KbQ0LcDvfgubyXv6IQttHSRUIMoYiraOxWXQmi-edYhG6iaFtCTMsROe"
+                <img src="images/layanan-gathering.webp"
                     alt="Tim gathering kantor dengan vendor outbound profesional" width="800" height="400"
                     loading="lazy" />
                 <p class="img-caption">Tim peserta gathering bersama fasilitator profesional dari vendor outbound
@@ -684,7 +713,7 @@
                 <div class="row g-3">
                     <div class="col-md-4">
                         <div class="related-card h-100"><img
-                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCDRe_vE9zsR8wKC10VOr3vAaDsUc82kCV6K-t7jo6KBE091lmL7ly6EJVf0GTDdWwRmJ0F6fzX8Iwtcclf6VD5UThiH8G0yckSYkIMwsDsR5WzfBlUxIJe_vXhe5Kg4SaWrg0e5IGquxW_2ZgNBueLSMKIkSpDIN7FGsytwKBcFmoAvmmL3y-fgEj9fMLdgrwuqwclOJmHIKZDYWJshofFqz7CdQXqbhPX77UKhMKk7XiVfjNVxvQl5XZrkgVjoMhNc4NE85oUVTg"
+                                src="images/artikel-family-gathering.webp"
                                 alt="Family gathering Batu" width="300" height="160" loading="lazy" />
                             <div class="p-3">
                                 <h5 class="fw-bold fs-6 mb-1">Paket Family Gathering Seru di Batu Malang</h5>
@@ -696,7 +725,7 @@
                     </div>
                     <div class="col-md-4">
                         <div class="related-card h-100"><img
-                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHDabddBpVNpwKvLUaxVIqoP8fvCCwMXDzn3y9DUzZJO_rqWqODLKbM6_DPafLd0ywhFEudPTS-MbxMY-NOIux7PA7en2tI2CFiGFDSR5o_pt4cTjznq8DW9eZuGYgGClypnifB0LYSJLMrZI2MNHraV3zMW24IwqmbXmNBQiTgZzj52Abk2bzNvcELsGIfthDbIIsZ4qy73XoD9Oh-9VUILflUYI_wqXcfplbrb_vjzg7X5m1_sGsT0Z6ITFvps_SGIpVhzNHPRVl"
+                                src="images/artikel-team-building.webp"
                                 alt="Team building Batu" width="300" height="160" loading="lazy" />
                             <div class="p-3">
                                 <h5 class="fw-bold fs-6 mb-1">Rekomendasi Lokasi Team Building di Batu</h5>
@@ -708,7 +737,7 @@
                     </div>
                     <div class="col-md-4">
                         <div class="related-card h-100"><img
-                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAE8eR2zqE4fzF3D1zuwes-barxhk_N0EzD1AWEfl4MAHG9qwi0KUOLHqur1zmSAt1-JtyjtgcAvDT0xiLDS0Xed427tcKlqDlBzga-EjI4XCkVieJ12CU3_OjtMPX1agVewt0NlFmV4QpaUEuagpVgvPpgDIJd9kJE3m7H_xnPD49WRpthUvco5MEKc6sbr5jhDtGzBmcKshonfyDZCFozGqpD2m6Y9PNCHPKdBC9TU4MYt_lrVdrs5KrNzTZwBHrIV-U0h8Shxn2m"
+                                src="images/artikel-gathering-perusahaan.webp"
                                 alt="Gathering perusahaan" width="300" height="160" loading="lazy" />
                             <div class="p-3">
                                 <h5 class="fw-bold fs-6 mb-1">Cara Sukses Mengadakan Gathering Perusahaan</h5>

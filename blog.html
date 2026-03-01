@@ -44,14 +44,27 @@
             --text-muted: #64748b
         }
 
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box
+        }
+
         * {
             font-family: 'Inter', sans-serif
+        }
+
+        html {
+            overflow-x: hidden;
+            max-width: 100vw
         }
 
         body {
             background: var(--bg-light);
             color: var(--text-dark);
-            overflow-x: hidden
+            overflow-x: hidden;
+            max-width: 100vw;
+            position: relative
         }
 
         .navbar {
@@ -251,8 +264,8 @@
         }
 
         .btn-scroll-top {
-            width: 44px;
-            height: 44px;
+            width: 56px;
+            height: 56px;
             border-radius: 50%;
             background: #fff;
             color: var(--text-dark);
@@ -260,7 +273,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 1.2rem;
+            font-size: 1.6rem;
             box-shadow: 0 4px 16px rgba(0, 0, 0, .08);
             transition: all .3s;
             opacity: 0;
@@ -319,6 +332,11 @@
 
             .blog-hero {
                 padding: 2.5rem 0 1.5rem
+            }
+
+            .float-container {
+                bottom: 18px;
+                right: 18px
             }
         }
     </style>
@@ -393,12 +411,12 @@
         <!-- Blog Cards -->
         <section class="py-5">
             <div class="container">
-                <div class="row g-4">
+                <div class="row g-4 justify-content-center">
                     <!-- Artikel 1 -->
                     <div class="col-md-6 col-lg-4">
                         <div class="article-card h-100">
                             <div style="overflow:hidden">
-                                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCDRe_vE9zsR8wKC10VOr3vAaDsUc82kCV6K-t7jo6KBE091lmL7ly6EJVf0GTDdWwRmJ0F6fzX8Iwtcclf6VD5UThiH8G0yckSYkIMwsDsR5WzfBlUxIJe_vXhe5Kg4SaWrg0e5IGquxW_2ZgNBueLSMKIkSpDIN7FGsytwKBcFmoAvmmL3y-fgEj9fMLdgrwuqwclOJmHIKZDYWJshofFqz7CdQXqbhPX77UKhMKk7XiVfjNVxvQl5XZrkgVjoMhNc4NE85oUVTg"
+                                <img src="images/artikel-family-gathering.webp"
                                     alt="Paket family gathering di Batu Malang" width="400" height="220"
                                     loading="lazy" />
                             </div>
@@ -417,9 +435,8 @@
                     <div class="col-md-6 col-lg-4">
                         <div class="article-card h-100">
                             <div style="overflow:hidden">
-                                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1RLw014Wf8Gtem-_ijCrOBBrWb_GI6QdvBctTy5vUzx0B6pbqYyZBunQ9lB-Mg6uWWVTsza_zREQhJ3faR7P1aiAG3yA5rc4ARv1Vma8BCq4Z3vdKX56JUxvA-v7BOwoUB0qpeZPBNoxU7c7-wt0GNAmzHoEqH05JmwUd1_JGyk49xLY8kNvS7jyjl0YKYJ03GqAXuWLM7X2ZYOKYKwgsERI9JHoYdNUlaXSks8JRmza6D4PvXpGW3dbab5fi_zHAeSnlU5fhoKBQ"
-                                    alt="Kegiatan outbound di alam Batu Malang" width="400" height="220"
-                                    loading="lazy" />
+                                <img src="images/artikel-outbound.webp" alt="Kegiatan outbound di alam Batu Malang"
+                                    width="400" height="220" loading="lazy" />
                             </div>
                             <div class="card-body">
                                 <span class="badge-cat mb-2 d-inline-block">Outbound</span>
@@ -435,8 +452,8 @@
                     <div class="col-md-6 col-lg-4">
                         <div class="article-card h-100">
                             <div style="overflow:hidden">
-                                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHDabddBpVNpwKvLUaxVIqoP8fvCCwMXDzn3y9DUzZJO_rqWqODLKbM6_DPafLd0ywhFEudPTS-MbxMY-NOIux7PA7en2tI2CFiGFDSR5o_pt4cTjznq8DW9eZuGYgGClypnifB0LYSJLMrZI2MNHraV3zMW24IwqmbXmNBQiTgZzj52Abk2bzNvcELsGIfthDbIIsZ4qy73XoD9Oh-9VUILflUYI_wqXcfplbrb_vjzg7X5m1_sGsT0Z6ITFvps_SGIpVhzNHPRVl"
-                                    alt="Team building di Batu Malang" width="400" height="220" loading="lazy" />
+                                <img src="images/artikel-team-building.webp" alt="Team building di Batu Malang"
+                                    width="400" height="220" loading="lazy" />
                             </div>
                             <div class="card-body">
                                 <span class="badge-cat mb-2 d-inline-block">Team Building</span>
@@ -453,7 +470,7 @@
                     <div class="col-md-6 col-lg-4">
                         <div class="article-card h-100">
                             <div style="overflow:hidden">
-                                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAE8eR2zqE4fzF3D1zuwes-barxhk_N0EzD1AWEfl4MAHG9qwi0KUOLHqur1zmSAt1-JtyjtgcAvDT0xiLDS0Xed427tcKlqDlBzga-EjI4XCkVieJ12CU3_OjtMPX1agVewt0NlFmV4QpaUEuagpVgvPpgDIJd9kJE3m7H_xnPD49WRpthUvco5MEKc6sbr5jhDtGzBmcKshonfyDZCFozGqpD2m6Y9PNCHPKdBC9TU4MYt_lrVdrs5KrNzTZwBHrIV-U0h8Shxn2m"
+                                <img src="images/artikel-gathering-perusahaan.webp"
                                     alt="Gathering perusahaan di Batu Malang" width="400" height="220" loading="lazy" />
                             </div>
                             <div class="card-body">
@@ -471,7 +488,7 @@
                     <div class="col-md-6 col-lg-4">
                         <div class="article-card h-100">
                             <div style="overflow:hidden">
-                                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuByMDv9WJr0_cwoTAtHfDnxdB3N7uco4rth_Zldl606HrZdBzwULlKLMZcvFQEB2-mZ2HgPbRm8csYgBHPKkKoCqCydKvc3vHVWd1AR3y6u_jPAdOKHQY20jLevN_0rxYOB8GjMQIw3HTSiCWuKO7doTeyiyEsbfJ2gKN0DllSr_T0H-wwxz3SFR91i7dzCX9mURsdbx5vfi2NqRMWnmU4Vkq3ETgt5ISv9yEMaGI3HUDaaobNzymbKgoBbZuThiI-JoCFKL52eeGfa"
+                                <img src="images/artikel-tips-vendor.webp"
                                     alt="Tips memilih vendor outbound Batu Malang" width="400" height="220"
                                     loading="lazy" />
                             </div>
